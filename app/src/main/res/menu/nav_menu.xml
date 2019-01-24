@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Text
+        android:id="@+id/beranda"
+        android:icon="@mipmap/ic_home_black_36dp"
+        android:title="Beranda"/>
+
+    <Text
+        android:id="@+id/kategori"
+        android:icon="@mipmap/ic_devices_other_black_36dp"
+        android:title="Kategori"/>
+
+    <Text
+        android:id="@+id/notifications"
+        android:icon="@mipmap/ic_action_bell_black"
+        android:title="Notifikasi"/>
+
+    <Text
+        android:id="@+id/wishlist"
+        android:icon="@mipmap/ic_grade_black_36dp"
+        android:title="Wishlist"/>
+
+    <Separator
+        android:id="@+id/separator_item_11" />
+
+    <Text
+        android:id="@+id/signout"
+        android:icon="@mipmap/ic_exit_to_app_black_36dp"
+        android:title="Keluar"/>
+
+    <Text
+        android:id="@+id/signin"
+        android:icon="@mipmap/ic_account_circle_black_36dp"
+        android:title="Masuk"/>
+
+    <Text
+        android:id="@+id/daftar"
+        android:icon="@mipmap/ic_assignment_ind_black_36dp"
+        android:title="Daftar"/>
+
+    <Separator
+        android:id="@+id/separator_item_21" />
+
+    <Group
+        android:id="@+id/group_11"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_11"
+            android:title="Setting" />
+
+        <Text
+            android:icon="@mipmap/ic_settings_applications_black_36dp"
+            android:id="@+id/setting"
+            android:title="@string/action_settings"
+            />
+        <Text
+            android:icon="@mipmap/ic_account_circle_black_36dp"
+            android:id="@+id/menu_profile"
+            android:title="@string/action_profile"
+            />
+
+    </Group>
+
+    <Group
+        android:id="@+id/group_21"
+        app:collapsible="true"
+        app:collapsed="true"
+        android:checkableBehavior="single">
+
+        <GroupHeader
+            android:id="@+id/group_header_21"
+            android:title="Info" />
+
+        <Text
+            android:id="@+id/about_us"
+            android:title="@string/activity_title_about_us"
+            app:showIconSpace="true"/>
+
+        <Text
+            android:id="@+id/privacy_policy"
+            android:title="@string/privacy_policy"
+            app:showIconSpace="true"/>
+
+    </Group>
+
+</menu>

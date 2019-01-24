@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context="com.example.project.tokoapp.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card" >
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <View
+            android:id="@+id/VwStreet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+        <fragment
+            android:id="@+id/FrgStreetView"
+            android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/VwStreet"
+            android:layout_alignLeft="@+id/VwStreet"
+            android:layout_alignRight="@+id/VwStreet"
+            android:layout_alignTop="@+id/VwStreet"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/lnrcoldetailwisata"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@+id/view4"
+            android:layout_alignLeft="@+id/view4"
+            android:gravity="center">
+
+            <Button
+                android:textColor="@color/md_white"
+                android:background="@color/Green_ForestGreen"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/btnOkMap"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="OK" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/view4"
+            android:layout_alignRight="@+id/map"
+            android:layout_below="@+id/view1" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view5"
+            android:layout_alignLeft="@+id/view5"
+            android:layout_alignRight="@+id/view5"
+            android:layout_alignTop="@+id/view5" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view5"
+                android:layout_alignLeft="@+id/view5"
+                android:layout_alignRight="@+id/view5"
+                android:layout_alignTop="@+id/view5"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgMaps"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/slctwhiteblue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_lightearth"
+                    android:tag="0" />
+
+                <ImageView
+                    android:id="@+id/imgZoomIn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/slctwhiteblue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zoomin" />
+
+                <ImageView
+                    android:id="@+id/imgZoomOut"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/slctwhiteblue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zoomout" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ButtonDetails"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/view1"
+            android:layout_alignLeft="@+id/view1"
+            android:layout_alignRight="@+id/view1"
+            android:layout_alignTop="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/TvMapDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardstore"
+                android:paddingLeft="5dp"
+                android:text="Alamat "
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

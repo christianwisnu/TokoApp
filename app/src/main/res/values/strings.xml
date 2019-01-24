@@ -1,0 +1,89 @@
+<resources>
+    <string name="facebook_app_id">260272987836756</string>
+    <string name="fb_login_protocol_scheme">fb260272987836756</string>
+    <!--<string name="facebook_app_id">435395583545216</string>
+    <string name="fb_login_protocol_scheme">fb435395583545216</string> BARU-->
+
+    <string name="app_name">TokoApp</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Selamat Datang!</string>
+    <string name="slide_1_desc">Dapatkan apa saja kebutuhanmu hanya di aplikasi TokoApp!</string>
+
+    <string name="slide_2_title">Yang Jual Banyak</string>
+    <string name="slide_2_desc">Jutaan produk dari semua kategori ada disini!</string>
+
+    <string name="slide_3_title">Belanja Lebih Mudah dan Murah</string>
+    <string name="slide_3_desc">Cari produk yang kamu mau langsung dari genggaman!</string>
+
+    <string name="slide_4_title">Diskon Lebih Banyak</string>
+    <string name="slide_4_desc">Dapatkan penawaran dan diskon terbaik, hanya ada di TokoApp!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="err_msg_email">Enter a Valid Email Address</string>
+    <string name="err_msg_phone">Enter a Valid Phone Number</string>
+    <string name="err_msg_sandi">Password must be filled!</string>
+    <string name="err_msg_nama">Full Name must be filled!</string>
+
+    <string name="err_msg_id_toko">ID Toko Harus diisi!</string>
+    <string name="err_msg_nama_toko">Nama Toko Harus diisi!</string>
+    <string name="err_msg_prov">Provinsi Harus diisi!</string>
+    <string name="err_msg_kab">Kabupaten/Kota Harus diisi!</string>
+    <string name="err_msg_kec">Kecamatan Harus diisi!</string>
+    <string name="err_msg_alamat">Alamat Harus diisi!</string>
+    <string name="err_msg_jam">Jam Harus diisi!</string>
+    <string name="err_msg_wa_phone1">Salah satu dari no WA atau telfon(1) Harus diisi!</string>
+
+    <string name="cancel_login_fb">Login Cancelled!</string>
+    <string name="error_login_fb">Login Error!</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_login">Login</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="prompt">Pilih salah satu</string>
+    <string-array name="status_move">
+        <item>Standby</item>
+        <item>Keliling</item>
+    </string-array>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+
+    <string name="fa_glass">&#xf000;</string>
+    <string name="fa_music">&#xf001;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_envelope_o">&#xf003;</string>
+    <string name="fa_heart">&#xf004;</string>
+    <string name="fa_star">&#xf005;</string>
+    <string name="fa_star_o">&#xf006;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_film">&#xf008;</string>
+    <string name="fa_chevron_right">&#xf054;</string>
+    <string name="fa_chevron_down">&#xf078;</string>
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

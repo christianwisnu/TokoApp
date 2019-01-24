@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_300">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/actionbar_dimen">
+
+        <ImageView
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:scaleType="centerInside"
+            android:id="@+id/img_tokolayout_back"
+            android:src="@mipmap/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/md_white"
+            android:textSize="18dp"
+            android:text="Informasi Pelapak" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_tokolayout_foto"
+                    android:layout_width="@dimen/profile_width2"
+                    android:layout_height="@dimen/profile_height2"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/toko" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/md_grey_300"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/md_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="ID Toko*"
+                                android:inputType="textCapWords" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_nama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutNama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Nama Toko*"
+                                android:inputType="textCapWords" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_slogan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutSlogan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Slogan Toko"
+                                android:inputType="textCapWords"
+                                android:ems="10"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_deskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutDeskripsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:hint="Deskripsi Toko"
+                                android:inputType="text|textMultiLine"
+                                android:gravity="top"
+                                android:ems="10"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutNote"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:hint="Note"
+                                android:inputType="text|textMultiLine"
+                                android:gravity="top"
+                                android:ems="10"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/md_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Lokasi Toko"
+                            android:textColor="@color/md_black"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/imgExpandLokasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/snv_expand"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginTop="10dp"
+                            android:clickable="true"
+                            android:onClick="expcol_lokasi"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border"/>
+
+                    <LinearLayout
+                        android:id="@+id/linTokoLayoutLokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/md_white">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_provinsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/eTokoLayoutProvinsi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Provinsi*"
+                                    android:enabled="false"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:id="@+id/txtTokoLayoutPilihProv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:text="Pilih"
+                                android:textColor="@color/Blue"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_kab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/eTokoLayoutKab"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Kabupaten/Kota*"
+                                    android:enabled="false"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:id="@+id/txtTokoLayoutPilihKab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:text="Pilih"
+                                android:textColor="@color/Blue"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_kec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/eTokoLayoutKec"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Kecamatan*"
+                                    android:enabled="false"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:id="@+id/txtTokoLayoutPilihKec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:text="Pilih"
+                                android:textColor="@color/Blue"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:gravity="top"
+                                    android:id="@+id/eTokoLayoutAlamat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:inputType="text|textMultiLine"
+                                    android:hint="Alamat Map*"
+                                    android:enabled="false"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <ImageView
+                                android:id="@+id/imgTokoLayoutPilihLokasiMap"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="80dp"
+                                android:background="@mipmap/ic_action_globe_black"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_alamat_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:gravity="top"
+                                    android:id="@+id/eTokoLayoutAlamatText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:inputType="text|textMultiLine"
+                                    android:hint="Alamat*"
+                                    android:ems="10"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/inputlayout_toko_kodepos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/eTokoLayoutKodepos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Kode Pos"
+                                    android:inputType="number"
+                                    android:ems="10"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Jenis Lapak"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/spTokoLayoutJenisLapak"
+                            android:entries="@array/status_move"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:prompt="@string/prompt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/md_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Kontak Toko"
+                            android:textColor="@color/md_black"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/imgExpandKontak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/snv_expand"
+                            android:clickable="true"
+                            android:onClick="expcol_kontak"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border" />
+
+                    <LinearLayout
+                        android:id="@+id/linTokoLayoutKontak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_emailtoko"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutEmailtoko"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textEmailAddress"
+                                android:hint="Email Toko" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_wa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutWa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:hint="No WhatsApp*" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_telp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutTelp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:hint="No Telfon (1)*" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_telp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutTelp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:hint="No Telfon (2)" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_fax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutFax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:hint="No Fax" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/md_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Media Sosial"
+                            android:textColor="@color/md_black"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:id="@+id/imgExpandSosial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-40dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/snv_expand"
+                            android:clickable="true"
+                            android:onClick="expcol_sosial"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/border" />
+
+                    <LinearLayout
+                        android:id="@+id/linTokoLayoutSosial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutFacebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:hint="Facebook" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutTwitter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:hint="Twitter" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/inputlayout_toko_instagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/eTokoLayoutInstagram"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:hint="Instagram" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/md_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="18dp"
+                                android:text="Jadwal Toko"
+                                android:textColor="@color/md_black" />
+
+                            <ImageView
+                                android:id="@+id/imgExpandJadwal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/snv_expand"
+                                android:layout_marginLeft="-40dp"
+                                android:layout_marginTop="10dp"
+                                android:clickable="true"
+                                android:onClick="expcol_jadwal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/border"/>
+
+                        <LinearLayout
+                            android:id="@+id/linTokoLayoutJadwal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2.0">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:orientation="horizontal">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/inputlayout_toko_jam_buka"
+                                            android:layout_width="120dp"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/eTokoLayoutJamBuka"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content"
+                                                android:hint="Jam Buka"
+                                                android:inputType="time"
+                                                android:enabled="false"/>
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:id="@+id/imgTokoLayoutPilihJamBuka"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:orientation="horizontal">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/inputlayout_toko_jam_tutup"
+                                            android:layout_width="120dp"
+                                            android:layout_height="wrap_content">
+
+                                            <EditText
+                                                android:id="@+id/eTokoLayoutJamTutup"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content"
+                                                android:hint="Jam Tutup"
+                                                android:inputType="time"
+                                                android:enabled="false"/>
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <ImageView
+                                            android:id="@+id/imgTokoLayoutPilihJamTutup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="center"
+                                    android:layout_weight="1.0">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Terapkan ke semua hari"
+                                            android:textSize="15dp"
+                                            android:gravity="center"
+                                            android:textColor="@color/md_black"/>
+
+                                        <Button
+                                            android:drawableLeft="@mipmap/ic_action_reload_black"
+                                            android:gravity="center"
+                                            android:id="@+id/btnProsesTerapkan"
+                                            android:layout_width="120dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="PROSES"
+                                            android:textColor="@color/md_black"
+                                            android:background="@color/Green_ForestGreen"
+                                            android:textStyle="bold"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/ckTokoLayout24jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buka 24 Jam"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"/>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2.0"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Senin"
+                                            android:textColor="@color/md_black"
+                                            android:textSize="18dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_mon"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaMon"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:hint="Jam Buka*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaMon"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_mon"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupMon"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Tutup*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupMon"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburMon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Rabu"
+                                            android:textColor="@color/md_black"
+                                            android:textSize="18dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_wed"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaWed"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Buka*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaWed"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_Wed"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupWed"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Tutup*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupWed"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburWed"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Jumat"
+                                            android:textColor="@color/md_black"
+                                            android:textSize="18dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_fri"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaFri"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Buka*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaFri"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_fri"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupFri"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Tutup*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupFri"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburFri"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Minggu"
+                                            android:textColor="@color/md_black"
+                                            android:textSize="18dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_sun"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaSun"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Buka*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaSun"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_sun"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupSun"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:enabled="false"
+                                                    android:inputType="time"
+                                                    android:hint="Jam Tutup*" />
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupSun"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp" />
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburSun"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Selasa"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/md_black"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_tue"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaTue"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Buka*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaTue"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_tue"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupTue"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Tutup*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupTue"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburTue"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Kamis"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/md_black"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_thu"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaThu"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Buka*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaThu"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_Thu"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupThu"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Tutup*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupThu"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburThu"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Hari Sabtu"
+                                            android:textSize="18dp"
+                                            android:textColor="@color/md_black"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_buka_sat"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamBukaSat"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Buka*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamBukaSat"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:orientation="horizontal">
+
+                                            <android.support.design.widget.TextInputLayout
+                                                android:id="@+id/inputlayout_toko_jam_tutup_sat"
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/eTokoLayoutJamTutupSat"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="Jam Tutup*"
+                                                    android:inputType="time"
+                                                    android:enabled="false"/>
+
+                                            </android.support.design.widget.TextInputLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imgTokoLayoutPilihJamTutupSat"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:background="@mipmap/ic_query_builder_black_36dp"/>
+                                        </LinearLayout>
+
+                                        <CheckBox
+                                            android:id="@+id/ckLiburSat"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Libur/Tutup"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/border"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="(*) kolom wajib diisi!"
+                            android:textColor="@color/Red"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="format waktu 24 jam"
+                            android:textColor="@color/Red"
+                            android:textSize="15dp"/>
+
+                        <Button
+                            android:textColor="@color/md_white"
+                            android:background="@color/Green_ForestGreen"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:id="@+id/btn_tokolayout_save"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Save" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
